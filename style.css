@@ -6,6 +6,10 @@ body{
     background: linear-gradient(#030C71 30%, #4169E1) fixed;
     height: 100%;
 }
+svg{
+    border: solid 1px white;
+    box-sizing: border-box;
+}
 main{
     /* background: no-repeat bottom left url('grass_2.png'); */
     height: 100%;
@@ -45,14 +49,19 @@ text{
     fill: white;
     font-size: 30px;
     font-style: italic;
+    text-decoration: underline;
+}
+path{
+    stroke: white;
+    fill: transparent;
 }
 .star,
 .starYellow,
 .starBlue,
 .starRed{
     z-index: 0;
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     position: absolute;
     border-radius: 50%;
     opacity: 0;

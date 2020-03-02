@@ -41,3 +41,15 @@ const callFunctionStars = setInterval(() => {
     variables.counter === 1 ? coordinatesAndColorStars(variables.bgcColorRed, variables.classRedStars) : '';
     variables.counter === 2 ? coordinatesAndColorStars(variables.bgcColorBlue, variables.classBlueStars) : '';
 }, variables.timeOutCoordinatesDivs);
+
+
+// var w = window.innerWidth
+// || document.documentElement.clientWidth
+// || document.body.clientWidth;
+
+// var h = window.innerHeight
+// || document.documentElement.clientHeight
+// || document.body.clientHeight;
+
+// var x = document.getElementById("demo");
+// x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
