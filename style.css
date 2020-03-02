@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Segoe Print';
+    src: url('Segoe Print Bold.ttf')
+}
+
 html{
     height: 100%;
     user-select: none;
@@ -6,10 +11,10 @@ body{
     background: linear-gradient(#030C71 30%, #4169E1) fixed;
     height: 100%;
 }
-svg{
+/* svg{
     border: solid 1px white;
     box-sizing: border-box;
-}
+} */
 main{
     /* background: no-repeat bottom left url('grass_2.png'); */
     height: 100%;
@@ -23,7 +28,7 @@ img.grass{
 }
 img.cat{
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
     left: 30px;
     width: 12%;
     z-index: 50;
@@ -35,20 +40,27 @@ img.moon{
     width: 12%;
     z-index: 50;
 }
+img.weOffer{
+    position: absolute;
+    bottom: 300px;
+    left: 100px;
+    width: 12%;
+}
 h2{
     font-style: italic;
     padding: 10px 0 0 0;
     text-align: center;
     font-size: 40px;
-    font-family: Arial;
+    font-family: 'Segoe Print';
     color: white;
 }
 
 text{
+    font-family: 'Segoe Print';
     stroke: transparent;
     fill: white;
     font-size: 30px;
-    font-style: italic;
+    /* font-style: italic; */
     text-decoration: underline;
 }
 path{
