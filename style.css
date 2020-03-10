@@ -41,6 +41,7 @@ img.moon{
     z-index: 50;
 }
 img.weOffer{
+    z-index: 50;
     position: absolute;
     bottom: 300px;
     left: 100px;
@@ -61,7 +62,27 @@ text{
     fill: white;
     font-size: 30px;
     /* font-style: italic; */
-    text-decoration: underline;
+}
+image{
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rotateCircle 90s linear infinite;
+}
+@keyframes rotateCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10500deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+circle{
+    fill: url('circle.png');
+    stroke: yellow;
+    stroke-width: 3px;
 }
 path{
     stroke: white;
