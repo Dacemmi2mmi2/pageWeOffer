@@ -13,7 +13,7 @@
         <img src="cat.png" alt="cat" class="cat">
         <img src="moon.png" alt="moon" class="moon">
         <img src="weOffer.png" alt="weOffer" class="weOffer">
-        <svg width="1920" height="850">
+        <svg width="1920" height="850" class="svgContainer">
             <path d="M310 70 C 550 90, 600 180, 300 190 S 200 306, 450 306"/>
             <path d="M520 306 C 1000 280, 1300 430, 1020 450"/>
             <path d="M750 450 C 450 450, 450 700, 1000 700"/>
@@ -31,7 +31,13 @@
             <path d="M1350 250 C 1400 250, 1400 250, 1530 250"/>
             <path d="M950 186 C 1000 186, 1000 186, 1050 186"/>
             <path d="M580 116 C 600 116, 700 116, 705 116"/>
-            <image xlink:href="circle.png" id="circle" x="25" y="35" height="70" width="70" />  
+            <image
+                xlink:href="circle.png"
+                id="circle"
+                x="25"
+                y="35"
+                height="70"
+                width="70"/>  
             <animateMotion 
                 xlink:href="#circle"
                 dur="90s"
@@ -60,43 +66,75 @@
                 c -425 0, -420 -125, -115 -128 s 50 -125, -80 -110
                 c -100 0, -110 0, -240 0"
             />
-            <text x="65" y="67">Сайт компании</text>
-            <text x="750" y="447">Социальные сети</text>
-            <text x="950" y="183">Форум</text>
-            <text x="1000" y="697">Развлекательный ресурс</text>
-            <text x="450" y="303">Блог</text>
-            <text x="580" y="113">Лендинг</text>
-            <text x="1350" y="247">Портфолио</text>
-            <text x="1450" y="547">Интернет магазин</text>
-
-
-            
-            <!-- относительные координаты -->
-            <!-- <path d="M40 70 c 100 0, 150 0, 270 0" stroke="black" fill="transparent"/> -->
-            <!-- <path d="M310 70 c 200 10, 310 100, 50 110 s -320 100, 90 126" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M450 306 c 560 -25, 950 145, 450 144" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M900 450 c -510 -30, -510 270, 300 250" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1200 700 c 780 30, 780 -180, 430 -150" stroke="black" fill="transparent"/> -->
-            <!-- <path d="M1630 550 c -470 40, -470 -150, -110 -180 s 80 -150, -80 -120" stroke="black" fill="transparent"/> -->
-            <!-- <path d="M1440 250 c -200 0, -200 0, -255 -40" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1185 210 c -30 -25, -30 -25, -235 -25" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M950 186 c -100 0, -110 -15, -130 -30" stroke="black" fill="transparent"/> -->
-
-            <!-- <path d="M820 156 c -20 -30, -100 -50, -260 -40" stroke="red" fill="transparent"/> -->
-
-            <!-- reverse -->
-
-            <!-- <path d="M560 116 c 100 0, 220 -10, 260 40" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M820 155 c 30 40, 220 30, 260 30" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1080 185 c 30 0, 85 0, 105 25" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1185 210 c 30 45, 220 40, 260 40" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1445 250 c 320 0, 320 110, 50 130 s -390 190, 180 170" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1675 550 c 290 -25, 290 165, -500 150" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M1175 700 c -790 15, -790 -280, -250 -250" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M925 450 c 310 15, 310 -150, -450 -143" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M475 306 c -425 0, -420 -125, -115 -128 s 50 -125, -80 -110" stroke="red" fill="transparent"/> -->
-            <!-- <path d="M280 70 c -100 0, -110 0, -240 0" stroke="black" fill="transparent"/> -->
+            <text x="65" y="67" class="textSiteCompany">Сайт компании</text>
+            <text x="750" y="447" class="textSocialNetwork">Социальные сети</text>
+            <text x="950" y="183" class="textForum">Форум</text>
+            <text x="1000" y="697" class="textGameSours">Развлекательный ресурс</text>
+            <text x="450" y="303" class="textBlog">Блог</text>
+            <text x="580" y="113" class="textLanding">Лендинг</text>
+            <text x="1350" y="247" class="textPortfolio">Портфолио</text>
+            <text x="1450" y="547" class="textInternetShop">Интернет магазин</text>
         </svg>
+        <div class="modal internetShop">
+            <button>X</button>
+            <p>Интернет магазин</p>
+        </div>
+        <div class="modal siteCompany">
+            <button>X</button>
+            <p>Сайт компании Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+            In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+            Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+            Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+            Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
+        <div class="modal blog">
+            <button>X</button>
+            <p>Блог Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+                In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+                Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+                Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+                Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
+        <div class="modal portfolio">
+            <button>X</button>
+            <p>Портфолио Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+                In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+                Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+                Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+                Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
+        <div class="modal socialNetwork">
+            <button>X</button>
+            <p>Социальные сети Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+                In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+                Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+                Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+                Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
+        <div class="modal forum">
+            <button>X</button>
+            <p>Форум Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+                In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+                Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+                Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+                Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
+        <div class="modal landing">
+            <button>X</button>
+            <p>Лендинг Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+                In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+                Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+                Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+                Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
+        <div class="modal gameSours">
+            <button>X</button>
+            <p>Развлекательный ресурс Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus distinctio laborum, nostrum officiis quidem cumque dolores voluptatibus ea adipisci eum porro doloremque eius impedit possimus veniam. Nobis, aperiam at!
+                In perferendis, quam rerum repudiandae similique reiciendis, minima eos exercitationem quaerat, suscipit nulla nobis quo architecto nihil! Totam voluptas eum repudiandae earum nobis ipsa inventore soluta ducimus quis? Expedita, consectetur!
+                Quis commodi nulla harum delectus iusto similique dolores, dolorum esse. Dignissimos enim, eligendi consectetur sapiente voluptas voluptatem at atque, maxime animi incidunt pariatur possimus dolores nobis aperiam obcaecati neque quae!
+                Aperiam quod ad deserunt voluptatum, nemo ratione, quidem, molestiae rem necessitatibus nihil voluptatibus. Libero quo mollitia velit distinctio minima dolorum laborum ullam, saepe, ut assumenda explicabo aut optio eos at.
+                Suscipit officiis commodi sunt laudantium magnam, soluta ex, neque sapiente quis harum modi consequatur quidem doloribus inventore cum assumenda, asperiores eaque? Repudiandae incidunt delectus necessitatibus sunt? Qui expedita excepturi nesciunt.</p>
+        </div>
     </main>
     <script src="app.js"></script>
 </body>

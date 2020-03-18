@@ -1,6 +1,25 @@
 const htmlElements = {
+    svgContainer: document.querySelector('svg'), 
     svgText: document.querySelector('.svgText'),
     main: document.querySelector('main'),
+    moon: document.querySelector('.moon'),
+    textSiteCompany: document.querySelector('.textSiteCompany'),
+    textInternetShop: document.querySelector('.textInternetShop'),
+    textBlog: document.querySelector('.textBlog'),
+    textPortfolio: document.querySelector('.textPortfolio'),
+    textSocialNetwork: document.querySelector('.textSocialNetwork'),
+    textForum: document.querySelector('.textForum'),
+    textLanding: document.querySelector('.textLanding'),
+    textGameSours: document.querySelector('.textGameSours'),
+    modalWindows: ['.siteCompany', '.internetShop', '.blog', '.portfolio', '.socialNetwork', '.forum', '.landing', '.gameSours'],
+    closeModalSiteCompany: document.querySelector('.siteCompany button'),
+    closeModalInternetShop: document.querySelector('.internetShop button'),
+    closeModalBlog: document.querySelector('.blog button'),
+    closeModalPortfolio: document.querySelector('.portfolio button'),
+    closeModalSocialNetwork: document.querySelector('.socialNetwork button'),
+    closeModalForum: document.querySelector('.forum button'),
+    closeModalLanding: document.querySelector('.landing button'),
+    closeModalGameSours: document.querySelector('.gameSours button'),
 }
 
 const variables = {
@@ -13,6 +32,8 @@ const variables = {
     bgcColorRed: '#FA8072',
     bgcColorYellow: 'yellow',
     bgcColorBlue: '#00FFFF',
+    positionModal: -100,
+    positionSvgContainer: 0,
 }
 
 const createDiv = setInterval(() =>{
@@ -42,6 +63,41 @@ const callFunctionStars = setInterval(() => {
     variables.counter === 2 ? coordinatesAndColorStars(variables.bgcColorBlue, variables.classBlueStars) : '';
 }, variables.timeOutCoordinatesDivs);
 
+const openModal = function openModalWindow(number){
+    let someModal = document.querySelector(htmlElements.modalWindows[number]),
+        timeDown = setInterval(()=>{
+            variables.positionModal === 0 ? clearInterval(timeDown) : '';
+            htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
+            someModal.style.top = variables.positionModal + '%'; 
+            variables.positionSvgContainer === -100 ? variables.positionModal ++ : variables.positionSvgContainer --;
+        }, 5);
+}
+const closeModal = function closeModalWindow(number){
+    let someModal = document.querySelector(htmlElements.modalWindows[number]),
+        timeUp = setInterval(()=>{
+            variables.positionSvgContainer === 0 ? clearInterval(timeUp) : '';
+            htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
+            someModal.style.top = variables.positionModal + '%';
+            variables.positionModal === -100 ? variables.positionSvgContainer ++ : variables.positionModal --;
+        }, 5);
+}
+
+htmlElements.textSiteCompany.addEventListener('click', ()=>{openModal(0)});
+htmlElements.textInternetShop.addEventListener('click', ()=>{openModal(1)});
+htmlElements.textBlog.addEventListener('click', ()=>{openModal(2)});
+htmlElements.textPortfolio.addEventListener('click', ()=>{openModal(3)});
+htmlElements.textSocialNetwork.addEventListener('click', ()=>{openModal(4)});
+htmlElements.textForum.addEventListener('click', ()=>{openModal(5)});
+htmlElements.textLanding.addEventListener('click', ()=>{openModal(6)});
+htmlElements.textGameSours.addEventListener('click', ()=>{openModal(7)});
+htmlElements.closeModalSiteCompany.addEventListener('click', ()=>{closeModal(0)});
+htmlElements.closeModalInternetShop.addEventListener('click', ()=>{closeModal(1)});
+htmlElements.closeModalBlog.addEventListener('click', ()=>{closeModal(2)});
+htmlElements.closeModalPortfolio.addEventListener('click', ()=>{closeModal(3)});
+htmlElements.closeModalSocialNetwork.addEventListener('click', ()=>{closeModal(4)});
+htmlElements.closeModalForum.addEventListener('click', ()=>{closeModal(5)});
+htmlElements.closeModalLanding.addEventListener('click', ()=>{closeModal(6)});
+htmlElements.closeModalGameSours.addEventListener('click', ()=>{closeModal(7)});
 
 // var w = window.innerWidth
 // || document.documentElement.clientWidth
@@ -53,11 +109,3 @@ const callFunctionStars = setInterval(() => {
 
 // var x = document.getElementById("demo");
 // x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
-
-
-
-
-// path="M0,0c30.20-3.4,18.4-0.6,23.4-0.6c5.7,0.1,10.8,0.9,16.3,2.3
-//     c13.5,3.5,26.1,9.6,38.5,16.2c12.3,6.5,21.3,16.8,31.9,25.4c10.8,8.7,21,18.3,31.7,26.9c9.3,7.4,20.9,11.5,31.4,16.7
-//     c13.7,6.8,26.8,9.7,41.8,9c21.4-1,40.8-3.7,61.3-10.4c10.9-3.5,18.9-11.3,28.5-17.8c5.4-3.7,10.4-6.7,14.8-11.5
-//     c1.9-2.1,3.7-5.5,6.5-6.5"
