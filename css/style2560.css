@@ -1,0 +1,306 @@
+@media screen and (max-width: 2600px){
+    :root {
+        --color-stroke: red;
+    }
+    @font-face{
+        font-family: 'Segoe Print';
+        src: url('Segoe Print Bold.ttf')
+    }
+    
+    html{
+        height: 100%;
+        user-select: none;
+    }
+    body{
+        background: linear-gradient(#030C71 30%, #4169E1) fixed;
+        height: 100%;
+    }
+    main{
+        height: 100%;
+    }
+    img.grass{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 35%;
+        z-index: 99;
+    }
+    img.cat{
+        position: absolute;
+        bottom: 150px;
+        left: 40px;
+        width: 12%;
+        z-index: 50;
+    }
+    img.moon{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 12%;
+        z-index: 50;
+    }
+    img.weOffer{
+        z-index: 50;
+        position: absolute;
+        bottom: 400px;
+        left: 200px;
+        width: 12%;
+    }
+    
+    text{
+        letter-spacing: 1px;
+        font-family: 'Segoe Print';
+        stroke: transparent;
+        fill: white;
+        font-size: 30px;
+        cursor: pointer;
+        transition: .15s linear;
+    }
+    text:hover{
+        fill: orange;
+    }
+    text:nth-child(21){
+        animation: changeSiteCompany 100s linear infinite; 
+    }
+    @keyframes changeSiteCompany {
+        0%, 1%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        1.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        97.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        98%, 100%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+    }
+    text:nth-child(25){
+        animation: changeBlog 100s linear infinite; 
+    }
+    @keyframes changeBlog {
+        0%, 9.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        10%, 11%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        11.5%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text:nth-child(22){
+        animation: changeSocialNetwork 100s linear infinite; 
+    }
+    @keyframes changeSocialNetwork {
+        0%, 17.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        18%, 20.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        21%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text:nth-child(26){
+        animation: changeLanding 100s linear infinite; 
+    }
+    @keyframes changeLanding {
+        0%, 29.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        30%, 31.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        32%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text:nth-child(24){
+        animation: changeGameSours 100s linear infinite; 
+    }
+    @keyframes changeGameSours {
+        0%, 46.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        47%, 50.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        51%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text:nth-child(28){
+        animation: changeInternetShop 100s linear infinite; 
+    }
+    @keyframes changeInternetShop {
+        0%, 60%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        60.5%, 63%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        63.5%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text:nth-child(27){
+        animation: changePortfolio 100s linear infinite; 
+    }
+    @keyframes changePortfolio {
+        0%, 73%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        73.5%, 75.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        76%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text:nth-child(23){
+        animation: changeForum 100s linear infinite; 
+    }
+    @keyframes changeForum {
+        0%, 82.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        83%, 84.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        85%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    image{
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: rotateCircle 2s linear infinite;
+    }
+    @keyframes rotateCircle {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    
+    path{
+        
+        fill: transparent;
+    }
+    .star,
+    .starYellow,
+    .starBlue,
+    .starRed{
+        z-index: 0;
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0;
+    }
+    .starYellow{
+        animation: movie 9s linear 6s infinite;
+    }
+    .starRed{
+        animation: movie 9s linear infinite;
+    }
+    .starBlue{
+        animation: movie 9s linear 3s infinite;
+    }
+    @keyframes movie{
+        0%, 30%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        80%, 100%{
+            opacity: 0;
+        }
+    }
+    
+    
+    /* ---------------------------modal windows------------------------ */
+    
+    
+    .modal{
+        position: absolute;
+        background-color: rgba(40, 47, 57, .9);
+    }
+    
+    .internetShop,
+    .siteCompany,
+    .blog,
+    .portfolio,
+    .socialNetwork,
+    .forum,
+    .landing,
+    .gameSours{
+        top: -100%;
+        z-index: 150;
+        width: 100%;
+        height: 100%;
+    }
+    button{
+        background-color: rgb(244, 107, 28);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 30px;
+        border: solid 1px black;
+        outline: none;
+    }
+    .modal p{
+        color: white;
+        font-size: 30px;
+        font-family: 'Segoe Print';
+        text-align: justify;
+        padding: 40px 90px 40px 40px;
+        line-height: 1.4;
+    }
+    svg{
+        position: absolute;
+    }    
+}
