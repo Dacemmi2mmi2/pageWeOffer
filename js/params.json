@@ -1,0 +1,716 @@
+{
+    "300" : {
+        "textSiteCompany" : {
+            "x" : "22%",
+            "y" : "36%"
+        },
+        "textSocialNetwork" : {
+            "x" : "41%",
+            "y" : "26%"
+        },
+        "textForum" : {
+            "x" : "60%",
+            "y" : "68%"
+        },
+        "textGameSours" : {
+            "x" : "28%",
+            "y" : "48%"
+        },
+        "textBlog" : {
+            "x" : "14%",
+            "y" : "8%"
+        },
+        "textLanding" : {
+            "x" : "68%",
+            "y" : "80%"
+        },
+        "textPortfolio" : {
+            "x" : "20%",
+            "y" : "17%"
+        },
+        "textInternetShop" : {
+            "x" : "5%",
+            "y" : "58%"
+        }
+    },
+    "350" : {
+        "textSiteCompany" : {
+            "x" : "22%",
+            "y" : "36%"
+        },
+        "textSocialNetwork" : {
+            "x" : "41%",
+            "y" : "26%"
+        },
+        "textForum" : {
+            "x" : "60%",
+            "y" : "68%"
+        },
+        "textGameSours" : {
+            "x" : "28%",
+            "y" : "48%"
+        },
+        "textBlog" : {
+            "x" : "14%",
+            "y" : "8%"
+        },
+        "textLanding" : {
+            "x" : "68%",
+            "y" : "80%"
+        },
+        "textPortfolio" : {
+            "x" : "20%",
+            "y" : "17%"
+        },
+        "textInternetShop" : {
+            "x" : "5%",
+            "y" : "58%"
+        }
+    },
+    "400" : {
+        "textSiteCompany" : {
+            "x" : "22%",
+            "y" : "36%"
+        },
+        "textSocialNetwork" : {
+            "x" : "41%",
+            "y" : "26%"
+        },
+        "textForum" : {
+            "x" : "60%",
+            "y" : "68%"
+        },
+        "textGameSours" : {
+            "x" : "28%",
+            "y" : "48%"
+        },
+        "textBlog" : {
+            "x" : "14%",
+            "y" : "8%"
+        },
+        "textLanding" : {
+            "x" : "68%",
+            "y" : "80%"
+        },
+        "textPortfolio" : {
+            "x" : "20%",
+            "y" : "17%"
+        },
+        "textInternetShop" : {
+            "x" : "5%",
+            "y" : "58%"
+        }
+    },
+    "450" : {
+        "textSiteCompany" : {
+            "x" : "22%",
+            "y" : "36%"
+        },
+        "textSocialNetwork" : {
+            "x" : "41%",
+            "y" : "26%"
+        },
+        "textForum" : {
+            "x" : "60%",
+            "y" : "68%"
+        },
+        "textGameSours" : {
+            "x" : "28%",
+            "y" : "48%"
+        },
+        "textBlog" : {
+            "x" : "14%",
+            "y" : "8%"
+        },
+        "textLanding" : {
+            "x" : "68%",
+            "y" : "80%"
+        },
+        "textPortfolio" : {
+            "x" : "20%",
+            "y" : "17%"
+        },
+        "textInternetShop" : {
+            "x" : "5%",
+            "y" : "58%"
+        }
+    },
+    "500" : {
+        "textSiteCompany" : {
+            "x" : "22%",
+            "y" : "36%"
+        },
+        "textSocialNetwork" : {
+            "x" : "41%",
+            "y" : "26%"
+        },
+        "textForum" : {
+            "x" : "60%",
+            "y" : "68%"
+        },
+        "textGameSours" : {
+            "x" : "28%",
+            "y" : "48%"
+        },
+        "textBlog" : {
+            "x" : "14%",
+            "y" : "8%"
+        },
+        "textLanding" : {
+            "x" : "68%",
+            "y" : "80%"
+        },
+        "textPortfolio" : {
+            "x" : "20%",
+            "y" : "17%"
+        },
+        "textInternetShop" : {
+            "x" : "5%",
+            "y" : "58%"
+        }
+    },
+    "550" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "50%",
+            "y" : "35%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "63%",
+            "y" : "78%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "600" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "50%",
+            "y" : "35%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "63%",
+            "y" : "78%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "650" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "50%",
+            "y" : "35%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "63%",
+            "y" : "78%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "700" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "50%",
+            "y" : "35%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "63%",
+            "y" : "78%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "750" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "800" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "850" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "900" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "35%",
+            "y" : "21%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "70%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "19%",
+            "y" : "45%"
+        }
+    },
+    "950" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "19%",
+            "y" : "45%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "75%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "35%",
+            "y" : "21%"
+        }
+    },
+    "1000" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "19%",
+            "y" : "45%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "75%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "35%",
+            "y" : "21%"
+        }
+    },
+    "1150" : {
+        "textSiteCompany" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textSocialNetwork" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "19%",
+            "y" : "45%"
+        },
+        "textBlog" : {
+            "x" : "70%",
+            "y" : "38%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "75%",
+            "y" : "55%"
+        },
+        "textInternetShop" : {
+            "x" : "35%",
+            "y" : "21%"
+        }
+    },
+    "1300" : {
+        "textSiteCompany" : {
+            "x" : "19%",
+            "y" : "45%"
+        },
+        "textSocialNetwork" : {
+            "x" : "53%",
+            "y" : "42%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textBlog" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textLanding" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textPortfolio" : {
+            "x" : "75%",
+            "y" : "50%"
+        },
+        "textInternetShop" : {
+            "x" : "35%",
+            "y" : "24%"
+        }
+    },
+    "1450" : {
+        "textSiteCompany" : {
+            "x" : "19%",
+            "y" : "45%"
+        },
+        "textSocialNetwork" : {
+            "x" : "53%",
+            "y" : "42%"
+        },
+        "textForum" : {
+            "x" : "11%",
+            "y" : "30%"
+        },
+        "textGameSours" : {
+            "x" : "10%",
+            "y" : "10%"
+        },
+        "textBlog" : {
+            "x" : "45%",
+            "y" : "66%"
+        },
+        "textLanding" : {
+            "x" : "60%",
+            "y" : "82%"
+        },
+        "textPortfolio" : {
+            "x" : "75%",
+            "y" : "60%"
+        },
+        "textInternetShop" : {
+            "x" : "35%",
+            "y" : "24%"
+        }
+    },
+    "1600" : {
+        "textSiteCompany" : {
+            "x" : "225",
+            "y" : "375"
+        },
+        "textSocialNetwork" : {
+            "x" : "966",
+            "y" : "295"
+        },
+        "textForum" : {
+            "x" : "154",
+            "y" : "210"
+        },
+        "textGameSours" : {
+            "x" : "566",
+            "y" : "125"
+        },
+        "textBlog" : {
+            "x" : "590",
+            "y" : "665"
+        },
+        "textLanding" : {
+            "x" : "903",
+            "y" : "853"
+        },
+        "textPortfolio" : {
+            "x" : "1085",
+            "y" : "600"
+        },
+        "textInternetShop" : {
+            "x" : "259",
+            "y" : "529"
+        }
+    },
+    "1950" : {
+        "textSiteCompany" : {
+            "x" : "65",
+            "y" : "67"
+        },
+        "textSocialNetwork" : {
+            "x" : "750",
+            "y" : "447"
+        },
+        "textForum" : {
+            "x" : "950",
+            "y" : "183"
+        },
+        "textGameSours" : {
+            "x" : "1000",
+            "y" : "697"
+        },
+        "textBlog" : {
+            "x" : "450",
+            "y" : "303"
+        },
+        "textLanding" : {
+            "x" : "580",
+            "y" : "113"
+        },
+        "textPortfolio" : {
+            "x" : "1350",
+            "y" : "247"
+        },
+        "textInternetShop" : {
+            "x" : "1450",
+            "y" : "547"
+        }
+    },
+    "2600" : {
+        "textSiteCompany" : {
+            "x" : "250",
+            "y" : "200"
+        },
+        "textSocialNetwork" : {
+            "x" : "800",
+            "y" : "655"
+        },
+        "textForum" : {
+            "x" : "1145",
+            "y" : "210"
+        },
+        "textGameSours" : {
+            "x" : "1665",
+            "y" : "955"
+        },
+        "textBlog" : {
+            "x" : "385",
+            "y" : "535"
+        },
+        "textLanding" : {
+            "x" : "1030",
+            "y" : "953"
+        },
+        "textPortfolio" : {
+            "x" : "1665",
+            "y" : "295"
+        },
+        "textInternetShop" : {
+            "x" : "1790",
+            "y" : "595"
+        }
+    }
+}
