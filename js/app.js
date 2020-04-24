@@ -11,7 +11,6 @@ const htmlElements = {
     textForum: document.querySelector('.textForum'),
     textLanding: document.querySelector('.textLanding'),
     textGameSours: document.querySelector('.textGameSours'),
-    modalWindows: ['.siteCompany', '.internetShop', '.blog', '.portfolio', '.socialNetwork', '.forum', '.landing', '.gameSours'],
     closeModalSiteCompany: document.querySelector('.siteCompany button'),
     closeModalInternetShop: document.querySelector('.internetShop button'),
     closeModalBlog: document.querySelector('.blog button'),
@@ -36,10 +35,11 @@ const variables = {
     positionModal: -100,
     positionSvgContainer: 0,
     linkSvgJSON: 'js/params.json',
-    arrSvgElements : ['textSiteCompany', 'textSocialNetwork', 'textForum', 'textGameSours', 'textBlog', 'textLanding', 'textPortfolio', 'textInternetShop']
+    arrSvgElements : ['textSiteCompany', 'textSocialNetwork', 'textForum', 'textGameSours', 'textBlog', 'textLanding', 'textPortfolio', 'textInternetShop'],
+    modalWindows: ['.siteCompany', '.socialNetwork', '.forum', '.gameSours', '.blog', '.landing', '.portfolio', '.internetShop'],
 }
 
-
+// attr for <text> in svg --------------------------
 const fnwh = function heigthWidth(data){
     const paramsScreen = [300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1150, 1300, 1450, 1600, 1950, 2600];
     for(let i = 0; i <= paramsScreen.length; i++){
@@ -58,8 +58,8 @@ fetch(variables.linkSvgJSON).then((response) => {return response.json()}).then((
 const sizeWindow = window.addEventListener('resize', () => {
     fetch(variables.linkSvgJSON).then((response) => {return response.json()}).then((obj) => {fnwh(obj)});
 });
-
-
+// -------------------
+// function for stars--------------------------------------------
 const createDiv = setInterval(() =>{
     let div = document.createElement('div');
     variables.counterDivs < 33 ? div.classList.add('starRed') : '';
@@ -88,10 +88,10 @@ const callFunctionStars = setInterval(() => {
     variables.counter === 1 ? coordinatesAndColorStars(variables.bgcColorRed, variables.classRedStars) : '';
     variables.counter === 2 ? coordinatesAndColorStars(variables.bgcColorBlue, variables.classBlueStars) : '';
 }, variables.timeOutCoordinatesDivs);
-
-
+// ----------------------------------------------------------------
+// function for modal windows-------------------------------------
 const openModal = function openModalWindow(number){
-    let someModal = document.querySelector(htmlElements.modalWindows[number]),
+    let someModal = document.querySelector(variables.modalWindows[number]),
         timeDown = setInterval(() => {
             variables.positionModal === 0 ? clearInterval(timeDown) : '';
             htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
@@ -102,7 +102,7 @@ const openModal = function openModalWindow(number){
 
 
 const closeModal = function closeModalWindow(number){
-    let someModal = document.querySelector(htmlElements.modalWindows[number]),
+    let someModal = document.querySelector(variables.modalWindows[number]),
         timeUp = setInterval(() => {
             variables.positionSvgContainer === 0 ? clearInterval(timeUp) : '';
             htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
@@ -112,19 +112,20 @@ const closeModal = function closeModalWindow(number){
 }
 
 
-htmlElements.textSiteCompany.addEventListener('click', () => {openModal(0)});
-htmlElements.textInternetShop.addEventListener('click', () => {openModal(1)});
-htmlElements.textBlog.addEventListener('click', () => {openModal(2)});
-htmlElements.textPortfolio.addEventListener('click', () => {openModal(3)});
-htmlElements.textSocialNetwork.addEventListener('click', () => {openModal(4)});
-htmlElements.textForum.addEventListener('click', () => {openModal(5)});
-htmlElements.textLanding.addEventListener('click', () => {openModal(6)});
-htmlElements.textGameSours.addEventListener('click', () => {openModal(7)});
+htmlElements.svgContainer.addEventListener('click', (event) => {
+    if(event.target.closest('svg')){
+        variables.arrSvgElements.forEach((item, index) => {
+            item === event.target.className.baseVal ? openModal(index) : '';
+        });
+    }
+});
+
 htmlElements.closeModalSiteCompany.addEventListener('click', () => {closeModal(0)});
-htmlElements.closeModalInternetShop.addEventListener('click', () => {closeModal(1)});
-htmlElements.closeModalBlog.addEventListener('click', () => {closeModal(2)});
-htmlElements.closeModalPortfolio.addEventListener('click', () => {closeModal(3)});
-htmlElements.closeModalSocialNetwork.addEventListener('click', () => {closeModal(4)});
-htmlElements.closeModalForum.addEventListener('click', () => {closeModal(5)});
-htmlElements.closeModalLanding.addEventListener('click', () => {closeModal(6)});
-htmlElements.closeModalGameSours.addEventListener('click', () => {closeModal(7)});
+htmlElements.closeModalSocialNetwork.addEventListener('click', () => {closeModal(1)});
+htmlElements.closeModalForum.addEventListener('click', () => {closeModal(2)});
+htmlElements.closeModalGameSours.addEventListener('click', () => {closeModal(3)});
+htmlElements.closeModalBlog.addEventListener('click', () => {closeModal(4)});
+htmlElements.closeModalLanding.addEventListener('click', () => {closeModal(5)});
+htmlElements.closeModalPortfolio.addEventListener('click', () => {closeModal(6)});
+htmlElements.closeModalInternetShop.addEventListener('click', () => {closeModal(7)});
+// -------------------------------------------------------------------------------
