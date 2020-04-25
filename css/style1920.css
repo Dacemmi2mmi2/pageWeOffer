@@ -50,8 +50,8 @@
     }
     svg{
         position: fixed;
-        transform-origin: right bottom;
-        /* transform: rotate(10deg); */
+        left: 0%;
+        box-sizing: border-box;
     }    
     text{
         font-family: 'Segoe Print';
@@ -333,7 +333,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: fixed;
+        box-sizing: border-box;
         /* background-color: rgba(40, 47, 57, .9); */
     }
     
@@ -345,7 +346,7 @@
     .forum,
     .landing,
     .gameSours{
-        top: -100%;
+        left: -100%;
         z-index: 150;
         width: 100%;
         height: 100%;

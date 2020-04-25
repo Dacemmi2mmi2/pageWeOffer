@@ -34,6 +34,7 @@ const variables = {
     bgcColorYellowStar : 'yellow',
     bgcColorBlueStar : '#00FFFF',
     positionModal : -100,
+    positionSvgContainer : 0,
     countRotateSvgContainer : 0,
     r1color : 3,
     r2color : 12,
@@ -96,51 +97,60 @@ const callFunctionStars = setInterval(() => {
     variables.counter === 2 ? coordinatesAndColorStars(variables.bgcColorBlueStar, variables.classBlueStars) : '';
 }, 3000);
 // ----------------------------------------------------------------
+
 // function for modal windows-------------------------------------
-// const openModal = function openModalWindow(number){
-//     let someModal = document.querySelector(variables.modalWindows[number]),
-//         timeDown = setInterval(() => {
-//             variables.positionModal === 0 ? clearInterval(timeDown) : '';
-//             htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
-//             someModal.style.top = variables.positionModal + '%'; 
-//             variables.positionSvgContainer === -100 ? variables.positionModal ++ : variables.positionSvgContainer --;
-//         }, 5);
-// }
 const openModal = function openModalWindow(classModal){
     let someModal = document.querySelector(variables.modalWindows[classModal]),
         timeOpen = setInterval(() => {
-            variables.positionModal === 0 ? clearInterval(timeOpen) : '';
-            variables.positionModal === -50 ? bgcColorModWin() : '';
-            htmlElements.svgContainer.style.transform = `rotate(${variables.countRotateSvgContainer}deg)`;
-            htmlElements.moon.style.right = variables.countPosMoon + '%';
-            variables.countPosMoon === -12 ? '' : variables.countPosMoon -- ;
-            someModal.style.top = variables.positionModal + '%';
-            variables.countRotateSvgContainer === 90 ? variables.positionModal ++ : variables.countRotateSvgContainer ++ ;
-
-    }, 7.5);
+            variables.positionSvgContainer === 100 ? variables.positionModal ++ : variables.positionSvgContainer ++ ;
+            variables.positionModal === -70 ? bgcColorModWin('day') : '';
+            htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
+            someModal.style.left = variables.positionModal + '%';
+            if(variables.positionModal === 0){
+                clearInterval(timeOpen);
+                variables.positionSvgContainer = -100;
+                variables.positionModal = 0;
+            }
+        }, 7.5);
 }
+
 
 const closeModal = function closeModalWindow(number){
     let someModal = document.querySelector(variables.modalWindows[number]),
-        timeUp = setInterval(() => {
-            variables.positionSvgContainer === 0 ? clearInterval(timeUp) : '';
-            htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
-            someModal.style.top = variables.positionModal + '%';
-            variables.positionModal === -100 ? variables.positionSvgContainer ++ : variables.positionModal --;
-        }, 5);
+        timeClose = setInterval(() => {
+            variables.positionModal === 100 ? variables.positionSvgContainer ++ : variables.positionModal ++ ;
+            variables.positionSvgContainer === -70 ? bgcColorModWin('night') : '';
+            htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
+            someModal.style.left = variables.positionModal + '%';
+            if(variables.positionSvgContainer === 0){
+                clearInterval(timeClose);
+                variables.positionSvgContainer = 0;
+                variables.positionModal = -100;
+            }
+        }, 7.5);
 }
 
 // bgc nigth or day
-const bgcColorModWin = function backgroundColorModalWindows(){
+const bgcColorModWin = function backgroundColorModalWindows(paramsBgcol){
     let color = setInterval(() => {
+        if(paramsBgcol === 'day'){
+            variables.r1color === 65 ? '' : variables.r1color ++ ;
+            variables.r2color === 105 ? '' : variables.r2color ++ ;
+            variables.r3color === 225 ? '' : variables.r3color ++ ;
+            variables.r4color === 255 ? '' : variables.r4color ++ ;
+            variables.r5color === 255 ? '' : variables.r5color ++ ;
+            variables.r6color === 255 ? '' : variables.r6color ++ ;
+            variables.r1color === 65 && variables.r2color === 105 && variables.r3color === 225 && variables.r4color === 255 && variables.r5color === 255 && variables.r6color === 255? clearInterval(color) : '';
+        }else{
+            variables.r1color === 3 ? '' : variables.r1color -- ;
+            variables.r2color === 12 ? '' : variables.r2color -- ;
+            variables.r3color === 113 ? '' : variables.r3color -- ;
+            variables.r4color === 65 ? '' : variables.r4color -- ;
+            variables.r5color === 105 ? '' : variables.r5color -- ;
+            variables.r6color === 225 ? '' : variables.r6color -- ;
+            variables.r1color === 3 && variables.r2color === 12 && variables.r3color === 113 && variables.r4color === 65 && variables.r5color === 105 && variables.r6color === 225 ? clearInterval(color) : '';
+        }
         htmlElements.body.style.background = `linear-gradient(rgba(${variables.r1color},${variables.r2color},${variables.r3color}, 1) 30%, rgba(${variables.r4color},${variables.r5color},${variables.r6color}, 1) 100%) fixed`;
-        variables.r1color === 65 ? '' : variables.r1color ++ ;
-        variables.r2color === 105 ? '' : variables.r2color ++ ;
-        variables.r3color === 225 ? '' : variables.r3color ++ ;
-        variables.r4color === 255 ? '' : variables.r4color ++ ;
-        variables.r5color === 255 ? '' : variables.r5color ++ ;
-        variables.r6color === 255 ? '' : variables.r6color ++ ;
-        variables.r1color === 65 && variables.r2color === 105 && variables.r3color === 225 && variables.r4color === 255 && variables.r5color === 255 && variables.r6color === 255? clearInterval(color) : '';
     }, .01);
 }
 
