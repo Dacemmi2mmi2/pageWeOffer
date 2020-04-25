@@ -34,13 +34,18 @@
         width: 12%;
         z-index: 50;
     }
-    img.moon{
+    img.moon,
+    img.sun{
         position: fixed;
         top: 0px;
         right: 0%;
         width: 12%;
         z-index: 50;
     }
+    img.sun{
+        right: 100%;
+    }
+    
     img.weOffer{
         z-index: 50;
         position: absolute;

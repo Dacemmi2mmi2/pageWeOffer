@@ -4,6 +4,7 @@ const htmlElements = {
     body : document.querySelector('body'),
     main: document.querySelector('main'),
     moon: document.querySelector('.moon'),
+    sun : document.querySelector('.sun'),
     textSiteCompany: document.querySelector('.textSiteCompany'),
     textInternetShop: document.querySelector('.textInternetShop'),
     textBlog: document.querySelector('.textBlog'),
@@ -27,6 +28,7 @@ const variables = {
     counterDivs : 0,
     counter : 0,
     positionMoon : 0,
+    positionSun : 100,
     classRedStars : '.starRed',
     classYellowStars : '.starYellow',
     classBlueStars : '.starBlue',
@@ -105,11 +107,17 @@ const callFunctionStars = setInterval(() => {
 const openModal = function openModalWindow(classModal){
     let someModal = document.querySelector(variables.modalWindows[classModal]),
         timeOpen = setInterval(() => {
-            variables.positionSvgContainer === 100 ? variables.positionModal ++ : variables.positionSvgContainer ++ ;
+            if(variables.positionSvgContainer === 100){
+                variables.positionModal ++ ;
+                variables.positionSun -- ;
+            }else{
+                variables.positionSvgContainer ++ ;
+            }
             variables.positionMoon === -12 ? '' : variables.positionMoon -- ;
             variables.positionModal === -70 ? bgcColorModWin('day') : '';
             htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
             htmlElements.moon.style.right = variables.positionMoon + '%';
+            htmlElements.sun.style.right = variables.positionSun + '%';
             someModal.style.left = variables.positionModal + '%';
             if(variables.positionModal === 0){
                 clearInterval(timeOpen);
@@ -130,16 +138,18 @@ const closeModal = function closeModalWindow(number){
             }else{
                 variables.positionModal ++ ;
             }
+            variables.positionSun === -12 ? '' : variables.positionSun -- ;
             variables.positionSvgContainer === -70 ? bgcColorModWin('night') : '';
             htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
             htmlElements.moon.style.right = variables.positionMoon + '%';
+            htmlElements.sun.style.right = variables.positionSun + '%';
             someModal.style.left = variables.positionModal + '%';
             if(variables.positionSvgContainer === 0){
                 clearInterval(timeClose);
                 variables.positionSvgContainer = 0;
                 variables.positionModal = -100;
+                variables.positionSun = 100;
             }
-            console.log(variables.positionMoon);
         }, 7.5);
 }
 
