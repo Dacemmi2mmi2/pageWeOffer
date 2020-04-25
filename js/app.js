@@ -26,7 +26,7 @@ const htmlElements = {
 const variables = {
     counterDivs : 0,
     counter : 0,
-    countPosMoon : 0,
+    positionMoon : 0,
     classRedStars : '.starRed',
     classYellowStars : '.starYellow',
     classBlueStars : '.starBlue',
@@ -66,7 +66,9 @@ fetch(variables.linkSvgJSON).then((response) => {return response.json()}).then((
 const sizeWindow = window.addEventListener('resize', () => {
     fetch(variables.linkSvgJSON).then((response) => {return response.json()}).then((obj) => {fnwh(obj)});
 });
-// -------------------
+// --------------------------------------------------------------
+
+
 // function for stars--------------------------------------------
 const createDiv = setInterval(() =>{
     let div = document.createElement('div');
@@ -98,19 +100,23 @@ const callFunctionStars = setInterval(() => {
 }, 3000);
 // ----------------------------------------------------------------
 
-// function for modal windows-------------------------------------
+
+// functions for modal windows-------------------------------------
 const openModal = function openModalWindow(classModal){
     let someModal = document.querySelector(variables.modalWindows[classModal]),
         timeOpen = setInterval(() => {
             variables.positionSvgContainer === 100 ? variables.positionModal ++ : variables.positionSvgContainer ++ ;
+            variables.positionMoon === -12 ? '' : variables.positionMoon -- ;
             variables.positionModal === -70 ? bgcColorModWin('day') : '';
             htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
+            htmlElements.moon.style.right = variables.positionMoon + '%';
             someModal.style.left = variables.positionModal + '%';
             if(variables.positionModal === 0){
                 clearInterval(timeOpen);
                 variables.positionSvgContainer = -100;
                 variables.positionModal = 0;
-            }
+                variables.positionMoon = 100;
+            }console.log(variables.positionMoon);
         }, 7.5);
 }
 
@@ -118,15 +124,22 @@ const openModal = function openModalWindow(classModal){
 const closeModal = function closeModalWindow(number){
     let someModal = document.querySelector(variables.modalWindows[number]),
         timeClose = setInterval(() => {
-            variables.positionModal === 100 ? variables.positionSvgContainer ++ : variables.positionModal ++ ;
+            if(variables.positionModal === 100){
+                variables.positionSvgContainer ++ ;
+                variables.positionMoon -- ;
+            }else{
+                variables.positionModal ++ ;
+            }
             variables.positionSvgContainer === -70 ? bgcColorModWin('night') : '';
             htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
+            htmlElements.moon.style.right = variables.positionMoon + '%';
             someModal.style.left = variables.positionModal + '%';
             if(variables.positionSvgContainer === 0){
                 clearInterval(timeClose);
                 variables.positionSvgContainer = 0;
                 variables.positionModal = -100;
             }
+            console.log(variables.positionMoon);
         }, 7.5);
 }
 
