@@ -1,6 +1,7 @@
 const htmlElements = {
     svgContainer: document.querySelector('svg'), 
     svgText: document.querySelector('.svgText'),
+    body : document.querySelector('body'),
     main: document.querySelector('main'),
     moon: document.querySelector('.moon'),
     textSiteCompany: document.querySelector('.textSiteCompany'),
@@ -23,20 +24,26 @@ const htmlElements = {
 
 
 const variables = {
-    counterDivs: 0,
-    counter: 0,
-    timeOutCoordinatesDivs: 3000,
-    classRedStars: '.starRed',
-    classYellowStars: '.starYellow',
-    classBlueStars: '.starBlue',
-    bgcColorRed: '#FA8072',
-    bgcColorYellow: 'yellow',
-    bgcColorBlue: '#00FFFF',
-    positionModal: -100,
-    positionSvgContainer: 0,
+    counterDivs : 0,
+    counter : 0,
+    countPosMoon : 0,
+    classRedStars : '.starRed',
+    classYellowStars : '.starYellow',
+    classBlueStars : '.starBlue',
+    bgcColorRedStar : '#FA8072',
+    bgcColorYellowStar : 'yellow',
+    bgcColorBlueStar : '#00FFFF',
+    positionModal : -100,
+    countRotateSvgContainer : 0,
+    r1color : 3,
+    r2color : 12,
+    r3color : 113,
+    r4color : 65,
+    r5color : 105,
+    r6color : 225,
     linkSvgJSON: 'js/params.json',
     arrSvgElements : ['textSiteCompany', 'textSocialNetwork', 'textForum', 'textGameSours', 'textBlog', 'textLanding', 'textPortfolio', 'textInternetShop'],
-    modalWindows: ['.siteCompany', '.socialNetwork', '.forum', '.gameSours', '.blog', '.landing', '.portfolio', '.internetShop'],
+    modalWindows : ['.siteCompany', '.socialNetwork', '.forum', '.gameSours', '.blog', '.landing', '.portfolio', '.internetShop'],
 }
 
 // attr for <text> in svg --------------------------
@@ -84,22 +91,34 @@ const coordinatesAndColorStars = function stars(color, htmlClass){
 const callFunctionStars = setInterval(() => {
     variables.counter ++;
     variables.counter === 3 ? variables.counter = 0 : '';
-    variables.counter === 0 ? coordinatesAndColorStars(variables.bgcColorYellow, variables.classYellowStars) : '';
-    variables.counter === 1 ? coordinatesAndColorStars(variables.bgcColorRed, variables.classRedStars) : '';
-    variables.counter === 2 ? coordinatesAndColorStars(variables.bgcColorBlue, variables.classBlueStars) : '';
-}, variables.timeOutCoordinatesDivs);
+    variables.counter === 0 ? coordinatesAndColorStars(variables.bgcColorYellowStar, variables.classYellowStars) : '';
+    variables.counter === 1 ? coordinatesAndColorStars(variables.bgcColorRedStar, variables.classRedStars) : '';
+    variables.counter === 2 ? coordinatesAndColorStars(variables.bgcColorBlueStar, variables.classBlueStars) : '';
+}, 3000);
 // ----------------------------------------------------------------
 // function for modal windows-------------------------------------
-const openModal = function openModalWindow(number){
-    let someModal = document.querySelector(variables.modalWindows[number]),
-        timeDown = setInterval(() => {
-            variables.positionModal === 0 ? clearInterval(timeDown) : '';
-            htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
-            someModal.style.top = variables.positionModal + '%'; 
-            variables.positionSvgContainer === -100 ? variables.positionModal ++ : variables.positionSvgContainer --;
-        }, 5);
-}
+// const openModal = function openModalWindow(number){
+//     let someModal = document.querySelector(variables.modalWindows[number]),
+//         timeDown = setInterval(() => {
+//             variables.positionModal === 0 ? clearInterval(timeDown) : '';
+//             htmlElements.svgContainer.style.top = variables.positionSvgContainer + '%';
+//             someModal.style.top = variables.positionModal + '%'; 
+//             variables.positionSvgContainer === -100 ? variables.positionModal ++ : variables.positionSvgContainer --;
+//         }, 5);
+// }
+const openModal = function openModalWindow(classModal){
+    let someModal = document.querySelector(variables.modalWindows[classModal]),
+        timeOpen = setInterval(() => {
+            variables.positionModal === 0 ? clearInterval(timeOpen) : '';
+            variables.positionModal === -50 ? bgcColorModWin() : '';
+            htmlElements.svgContainer.style.transform = `rotate(${variables.countRotateSvgContainer}deg)`;
+            htmlElements.moon.style.right = variables.countPosMoon + '%';
+            variables.countPosMoon === -12 ? '' : variables.countPosMoon -- ;
+            someModal.style.top = variables.positionModal + '%';
+            variables.countRotateSvgContainer === 90 ? variables.positionModal ++ : variables.countRotateSvgContainer ++ ;
 
+    }, 7.5);
+}
 
 const closeModal = function closeModalWindow(number){
     let someModal = document.querySelector(variables.modalWindows[number]),
@@ -109,6 +128,20 @@ const closeModal = function closeModalWindow(number){
             someModal.style.top = variables.positionModal + '%';
             variables.positionModal === -100 ? variables.positionSvgContainer ++ : variables.positionModal --;
         }, 5);
+}
+
+// bgc nigth or day
+const bgcColorModWin = function backgroundColorModalWindows(){
+    let color = setInterval(() => {
+        htmlElements.body.style.background = `linear-gradient(rgba(${variables.r1color},${variables.r2color},${variables.r3color}, 1) 30%, rgba(${variables.r4color},${variables.r5color},${variables.r6color}, 1) 100%) fixed`;
+        variables.r1color === 65 ? '' : variables.r1color ++ ;
+        variables.r2color === 105 ? '' : variables.r2color ++ ;
+        variables.r3color === 225 ? '' : variables.r3color ++ ;
+        variables.r4color === 255 ? '' : variables.r4color ++ ;
+        variables.r5color === 255 ? '' : variables.r5color ++ ;
+        variables.r6color === 255 ? '' : variables.r6color ++ ;
+        variables.r1color === 65 && variables.r2color === 105 && variables.r3color === 225 && variables.r4color === 255 && variables.r5color === 255 && variables.r6color === 255? clearInterval(color) : '';
+    }, .01);
 }
 
 
