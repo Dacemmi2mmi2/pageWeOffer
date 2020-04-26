@@ -124,7 +124,10 @@ const openModal = function openModalWindow(classModal){
                 variables.positionSvgContainer = -100;
                 variables.positionModal = 0;
                 variables.positionMoon = 100;
-            }console.log(variables.positionMoon);
+                variables.bgcColorRedStar = 'transparent';
+                variables.bgcColorBlueStar = 'transparent';
+                variables.bgcColorYellowStar = 'transparent';
+            }
         }, 7.5);
 }
 
@@ -149,6 +152,9 @@ const closeModal = function closeModalWindow(number){
                 variables.positionSvgContainer = 0;
                 variables.positionModal = -100;
                 variables.positionSun = 100;
+                variables.bgcColorRedStar = '#FA8072';
+                variables.bgcColorBlueStar = '#00FFFF';
+                variables.bgcColorYellowStar = 'yellow';
             }
         }, 7.5);
 }
