@@ -113,7 +113,7 @@ const openModal = function openModalWindow(classModal){
             }else{
                 variables.positionSvgContainer ++ ;
             }
-            variables.positionMoon === -12 ? '' : variables.positionMoon -- ;
+            variables.positionMoon === -35 ? '' : variables.positionMoon -- ;
             variables.positionModal === -70 ? bgcColorModWin('day') : '';
             htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
             htmlElements.moon.style.right = variables.positionMoon + '%';
@@ -128,7 +128,7 @@ const openModal = function openModalWindow(classModal){
                 variables.bgcColorBlueStar = 'transparent';
                 variables.bgcColorYellowStar = 'transparent';
             }
-        }, 7.5);
+        }, 5);
 }
 
 
@@ -141,7 +141,7 @@ const closeModal = function closeModalWindow(number){
             }else{
                 variables.positionModal ++ ;
             }
-            variables.positionSun === -12 ? '' : variables.positionSun -- ;
+            variables.positionSun === -35 ? '' : variables.positionSun -- ;
             variables.positionSvgContainer === -70 ? bgcColorModWin('night') : '';
             htmlElements.svgContainer.style.left = variables.positionSvgContainer + '%';
             htmlElements.moon.style.right = variables.positionMoon + '%';
@@ -156,7 +156,7 @@ const closeModal = function closeModalWindow(number){
                 variables.bgcColorBlueStar = '#00FFFF';
                 variables.bgcColorYellowStar = 'yellow';
             }
-        }, 7.5);
+        }, 5);
 }
 
 // bgc nigth or day

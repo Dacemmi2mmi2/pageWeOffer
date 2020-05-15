@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px){
+@media screen and (max-height: 450px){
     :root {
         --color-stroke: red;
     }
@@ -11,36 +11,19 @@
         height: 100%;
         user-select: none;
     }
-    
     body{
         background: linear-gradient(#030C71 30%, #4169E1) fixed;
         height: 100%;
     }
-
     main{
         height: 100%;
     }
-
     img.catWeOfffer{
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 60%;
-        z-index: 99;
+        display: none;
     }
-
     img.moon,
     img.sun{
-        display: block;
-        position: fixed;
-        top: 0px;
-        right: 0%;
-        width: 25%;
-        z-index: 50;
-    }
-    img.sun{
-        right: 100%;
+        display: none;
     }
     
     svg{
@@ -54,39 +37,33 @@
         font-family: 'Segoe Print';
         stroke: transparent;
         fill: white;
-        font-size: 25px;
+        font-size: 18px;
         cursor: pointer;
         transition: .15s linear;
     }
-
     text:hover{
         fill: orange;
     }
-
     path{
         fill: transparent;
     }
-
     .star,
     .starYellow,
     .starBlue,
     .starRed{
-        z-index: 0;
-        width: 4px;
-        height: 4px;
+        z-index: -2;
+        width: 2px;
+        height: 2px;
         position: absolute;
         border-radius: 50%;
         opacity: 0;
     }
-
     .starYellow{
         animation: movie 9s linear 6s infinite;
     }
-
     .starRed{
         animation: movie 9s linear infinite;
     }
-
     .starBlue{
         animation: movie 9s linear 3s infinite;
     }
@@ -108,7 +85,7 @@
     
     .modal{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         position: fixed;
     }
@@ -128,7 +105,7 @@
     }
 
     .modal>.container{
-        width: 55%;
+        width: 100%;
         display: flex;
         flex-wrap: nowrap;
     }
@@ -136,22 +113,21 @@
     button{
         cursor: pointer;
         background-color: rgb(244, 107, 28);
-        margin: 0 0 0 0;
-        width: 45px;
-        height: 45px;
+        margin: 10px 0 0 10px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
-        font-size: 30px;
+        font-size: 20px;
         border: solid 1px black;
         outline: none;
     }
-
     .modal p{
         color: black;
-        width: 60%;
-        font-size: 25px;
+        width: 80%;
+        font-size: 18px;
         font-family: 'Segoe Print';
-        text-align: left;
-        padding: 0px 40px 0px 40px;
+        text-align: right;
+        padding: 10px 10px 0px 10px;
         line-height: 1.3;
     }    
 }

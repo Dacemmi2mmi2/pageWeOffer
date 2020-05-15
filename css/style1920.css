@@ -2,6 +2,7 @@
     :root {
         --color-stroke: red;
     }
+    
     @font-face{
         font-family: 'Segoe Print';
         src: url('Segoe Print Bold.ttf')
@@ -11,53 +12,47 @@
         height: 100%;
         user-select: none;
     }
+
     body{
         background: linear-gradient(rgba(3,12,113, 1) 30%, rgba(65,105,225, 1) 100%) fixed;
         height: 100%;
     }
+
     main{
         overflow: hidden;
         width: 100%;
         height: 100%;
     }
-    img.grass{
+
+    img.catWeOfffer{
+        display: block;
         position: absolute;
         bottom: 0px;
         left: 0px;
-        width: 35%;
+        width: 32%;
         z-index: 99;
     }
-    img.cat{
-        position: absolute;
-        bottom: 100px;
-        left: 30px;
-        width: 12%;
-        z-index: 50;
-    }
+
     img.moon,
     img.sun{
+        display: block;
         position: fixed;
         top: 0px;
         right: 0%;
         width: 12%;
         z-index: 50;
     }
+
     img.sun{
         right: 100%;
     }
     
-    img.weOffer{
-        z-index: 50;
-        position: absolute;
-        bottom: 300px;
-        left: 100px;
-        width: 12%;
-    }
     svg{
         position: fixed;
         left: 0%;
         box-sizing: border-box;
-    }    
+    }
+
     text{
         font-family: 'Segoe Print';
         stroke: transparent;
@@ -277,6 +272,7 @@
             stroke: transparent;
         }
     }
+
     image{
         transform-box: fill-box;
         transform-origin: center;
@@ -298,6 +294,7 @@
         stroke: white;
         fill: transparent;
     }
+
     .star,
     .starYellow,
     .starBlue,
@@ -309,12 +306,15 @@
         border-radius: 50%;
         opacity: 0;
     }
+
     .starYellow{
         animation: movie 9s linear 6s infinite;
     }
+
     .starRed{
         animation: movie 9s linear infinite;
     }
+
     .starBlue{
         animation: movie 9s linear 3s infinite;
     }
@@ -331,7 +331,7 @@
     }
     
     
-    /* ---------------------------modal windows------------------------ */
+    /* ========================= modal windows =========================== */
     
     
     .modal{
@@ -339,8 +339,6 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        box-sizing: border-box;
-        /* background-color: rgba(40, 47, 57, .9); */
     }
     
     .internetShop,
@@ -356,11 +354,15 @@
         width: 100%;
         height: 100%;
     }
+
     .modal>.container{
         width: 60%;
         display: flex;
+        flex-wrap: nowrap;
     }
+
     button{
+        cursor: pointer;
         background-color: rgb(244, 107, 28);
         margin: 0 0 0 0;
         width: 50px;
@@ -370,6 +372,7 @@
         border: solid 1px black;
         outline: none;
     }
+
     .modal p{
         color: black;
         width: 90%;
