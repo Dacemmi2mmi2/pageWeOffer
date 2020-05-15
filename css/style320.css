@@ -4,7 +4,7 @@
     }
     @font-face{
         font-family: 'Segoe Print';
-        src: url('Segoe Print Bold.ttf')
+        src: url('../fonts/Segoe Print Bold.ttf');
     }
     
     html{
