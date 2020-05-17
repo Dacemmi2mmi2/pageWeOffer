@@ -66,6 +66,17 @@
         fill: orange;
     }
 
+    text.textSiteCompany,
+    text.textBlog,
+    text.textSocialNetwork,
+    text.textLanding,
+    text.textGameSours,
+    text.textInternetShop,
+    text.textPortfolio,
+    text.textForum{
+        animation: none; 
+    }
+
     path{
         fill: transparent;
     }

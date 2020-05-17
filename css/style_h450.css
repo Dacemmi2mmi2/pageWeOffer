@@ -11,16 +11,20 @@
         height: 100%;
         user-select: none;
     }
+
     body{
         background: linear-gradient(#030C71 30%, #4169E1) fixed;
         height: 100%;
     }
+
     main{
         height: 100%;
     }
+
     img.catWeOfffer{
         display: none;
     }
+
     img.moon,
     img.sun{
         display: none;
@@ -41,12 +45,26 @@
         cursor: pointer;
         transition: .15s linear;
     }
+
     text:hover{
         fill: orange;
     }
+
+    text.textSiteCompany,
+    text.textBlog,
+    text.textSocialNetwork,
+    text.textLanding,
+    text.textGameSours,
+    text.textInternetShop,
+    text.textPortfolio,
+    text.textForum{
+        animation: none; 
+    }
+
     path{
         fill: transparent;
     }
+
     .star,
     .starYellow,
     .starBlue,
@@ -58,15 +76,19 @@
         border-radius: 50%;
         opacity: 0;
     }
+
     .starYellow{
         animation: movie 9s linear 6s infinite;
     }
+
     .starRed{
         animation: movie 9s linear infinite;
     }
+
     .starBlue{
         animation: movie 9s linear 3s infinite;
     }
+
     @keyframes movie{
         0%, 30%{
             opacity: 0;
@@ -121,6 +143,7 @@
         border: solid 1px black;
         outline: none;
     }
+    
     .modal p{
         color: black;
         width: 80%;
