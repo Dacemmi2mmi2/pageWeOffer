@@ -64,7 +64,7 @@
     text:hover{
         fill: orange;
     }
-    text:nth-child(20){
+    text.textSiteCompany{
         animation: changeSiteCompany 90s linear infinite; 
     }
     @keyframes changeSiteCompany {
@@ -87,7 +87,7 @@
             stroke-width: 3px;
         }
     }
-    text:nth-child(24){
+    text.textBlog{
         animation: changeBlog 90s linear infinite; 
     }
     @keyframes changeBlog {
@@ -114,7 +114,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(21){
+    text.textSocialNetwork{
         animation: changeSocialNetwork 90s linear infinite; 
     }
     @keyframes changeSocialNetwork {
@@ -141,7 +141,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(23){
+    text.textGameSours{
         animation: changeGameSours 90s linear infinite; 
     }
     @keyframes changeGameSours {
@@ -168,7 +168,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(27){
+    text.textInternetShop{
         animation: changeInternetShop 90s linear infinite; 
     }
     @keyframes changeInternetShop {
@@ -195,7 +195,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(26){
+    text.textPortfolio{
         animation: changePortfolio 90s linear infinite; 
     }
     @keyframes changePortfolio {
@@ -222,7 +222,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(22){
+    text.textForum{
         animation: changeForum 90s linear infinite; 
     }
     @keyframes changeForum {
@@ -249,7 +249,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(25){
+    text.textLanding{
         animation: changeLanding 90s linear infinite; 
     }
     @keyframes changeLanding {

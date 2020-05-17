@@ -5,22 +5,6 @@ const htmlElements = {
     main: document.querySelector('main'),
     moon: document.querySelector('.moon'),
     sun : document.querySelector('.sun'),
-    textSiteCompany: document.querySelector('.textSiteCompany'),
-    textInternetShop: document.querySelector('.textInternetShop'),
-    textBlog: document.querySelector('.textBlog'),
-    textPortfolio: document.querySelector('.textPortfolio'),
-    textSocialNetwork: document.querySelector('.textSocialNetwork'),
-    textForum: document.querySelector('.textForum'),
-    textLanding: document.querySelector('.textLanding'),
-    textGameSours: document.querySelector('.textGameSours'),
-    closeModalSiteCompany: document.querySelector('.siteCompany button'),
-    closeModalInternetShop: document.querySelector('.internetShop button'),
-    closeModalBlog: document.querySelector('.blog button'),
-    closeModalPortfolio: document.querySelector('.portfolio button'),
-    closeModalSocialNetwork: document.querySelector('.socialNetwork button'),
-    closeModalForum: document.querySelector('.forum button'),
-    closeModalLanding: document.querySelector('.landing button'),
-    closeModalGameSours: document.querySelector('.gameSours button'),
 }
 
 
@@ -44,31 +28,30 @@ const variables = {
     r4color : 65,
     r5color : 105,
     r6color : 225,
-    linkSvgJSON: 'js/params.json',
+    linkSvgDataJSON: 'js/svg.json',
+    linkSvgCircleJSON : 'js/circleSvg.json',
     arrSvgElements : ['textSiteCompany', 'textSocialNetwork', 'textForum', 'textGameSours', 'textBlog', 'textLanding', 'textPortfolio', 'textInternetShop'],
     modalWindows : ['.siteCompany', '.socialNetwork', '.forum', '.gameSours', '.blog', '.landing', '.portfolio', '.internetShop'],
+    closeModalWindows : ['siteCompanyButton', 'socialNetworkButton', 'forumButton', 'gameSoursButton', 'blogButton', 'landingButton', 'portfolioButton', 'internetShopButton'],
+    paramsScreen : [300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1150, 1300, 1450, 1600, 1950, 2600],
 }
 
-// attr for <text> in svg --------------------------
+// position for <text> in svg and animation circle --------------------------
 const fnwh = function heigthWidth(data){
-    const paramsScreen = [300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1150, 1300, 1450, 1600, 1950, 2600];
-    for(let i = 0; i <= paramsScreen.length; i++){
-        if(window.innerWidth < paramsScreen[i]){
-            variables.arrSvgElements.forEach((item) => {
-                htmlElements[item].setAttribute('x', data[paramsScreen[i]][item].x);
-                htmlElements[item].setAttribute('y', data[paramsScreen[i]][item].y);
-            });
+    for(let i = 0; i <= variables.paramsScreen.length; i++){
+        if(window.innerWidth < variables.paramsScreen[i]){
+            htmlElements.svgContainer.innerHTML = data[variables.paramsScreen[i]];
             break;
         }
     }
 };
-fetch(variables.linkSvgJSON).then((response) => {return response.json()}).then((obj) => {fnwh(obj)});
+fetch(variables.linkSvgDataJSON).then((response) => {return response.json()}).then((obj) => {fnwh(obj)});
 
 
 const sizeWindow = window.addEventListener('resize', () => {
-    fetch(variables.linkSvgJSON).then((response) => {return response.json()}).then((obj) => {fnwh(obj)});
+    fetch(variables.linkSvgDataJSON).then((response) => {return response.json()}).then((obj) => {fnwh(obj)});
 });
-// --------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
 
 // function for stars--------------------------------------------
@@ -132,8 +115,8 @@ const openModal = function openModalWindow(classModal){
 }
 
 
-const closeModal = function closeModalWindow(number){
-    let someModal = document.querySelector(variables.modalWindows[number]),
+const closeModal = function closeModalWindow(classModal){
+    let someModal = document.querySelector(variables.modalWindows[classModal]),
         timeClose = setInterval(() => {
             if(variables.positionModal === 100){
                 variables.positionSvgContainer ++ ;
@@ -184,20 +167,16 @@ const bgcColorModWin = function backgroundColorModalWindows(paramsBgcol){
 }
 
 
-htmlElements.svgContainer.addEventListener('click', (event) => {
+htmlElements.main.addEventListener('click', (event) => {
     if(event.target.closest('svg')){
         variables.arrSvgElements.forEach((item, index) => {
             item === event.target.className.baseVal ? openModal(index) : '';
         });
     }
+    if(event.target.closest('div')){
+        variables.closeModalWindows.forEach((item, index) => {
+            item === event.target.className ? closeModal(index) : '';
+        });
+    }
 });
-
-htmlElements.closeModalSiteCompany.addEventListener('click', () => {closeModal(0)});
-htmlElements.closeModalSocialNetwork.addEventListener('click', () => {closeModal(1)});
-htmlElements.closeModalForum.addEventListener('click', () => {closeModal(2)});
-htmlElements.closeModalGameSours.addEventListener('click', () => {closeModal(3)});
-htmlElements.closeModalBlog.addEventListener('click', () => {closeModal(4)});
-htmlElements.closeModalLanding.addEventListener('click', () => {closeModal(5)});
-htmlElements.closeModalPortfolio.addEventListener('click', () => {closeModal(6)});
-htmlElements.closeModalInternetShop.addEventListener('click', () => {closeModal(7)});
 // -------------------------------------------------------------------------------

@@ -69,7 +69,7 @@
         fill: orange;
     }
 
-    text:nth-child(21){
+    text.textSiteCompany{
         animation: changeSiteCompany 100s linear infinite; 
     }
     @keyframes changeSiteCompany {
@@ -92,7 +92,7 @@
             stroke-width: 3px;
         }
     }
-    text:nth-child(25){
+    text.textBlog{
         animation: changeBlog 100s linear infinite; 
     }
     @keyframes changeBlog {
@@ -110,7 +110,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(22){
+    text.textSocialNetwork{
         animation: changeSocialNetwork 100s linear infinite; 
     }
     @keyframes changeSocialNetwork {
@@ -128,7 +128,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(26){
+    text.textLanding{
         animation: changeLanding 100s linear infinite; 
     }
     @keyframes changeLanding {
@@ -146,7 +146,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(24){
+    text.textGameSours{
         animation: changeGameSours 100s linear infinite; 
     }
     @keyframes changeGameSours {
@@ -164,7 +164,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(28){
+    text.textInternetShop{
         animation: changeInternetShop 100s linear infinite; 
     }
     @keyframes changeInternetShop {
@@ -182,7 +182,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(27){
+    text.textPortfolio{
         animation: changePortfolio 100s linear infinite; 
     }
     @keyframes changePortfolio {
@@ -200,7 +200,7 @@
             stroke: transparent;
         }
     }
-    text:nth-child(23){
+    text.textForum{
         animation: changeForum 100s linear infinite; 
     }
     @keyframes changeForum {

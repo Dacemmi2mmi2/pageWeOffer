@@ -69,6 +69,178 @@
         fill: transparent;
     }
 
+    text:nth-child(21){
+        animation: changeForum 60s linear infinite; 
+    }
+    @keyframes changeForum {
+        0%, 1%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        1.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        97.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        98%, 100%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+    }
+
+    text.textSiteCompany{
+        animation: changeSiteCompany 60s linear infinite; 
+    }
+    @keyframes changeSiteCompany {
+        0%, 7.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        8.5%, 12.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        13.5%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+
+    text.textInternetShop{
+        animation: changeInternetShop 60s linear infinite; 
+    }
+    @keyframes changeInternetShop {
+        0%, 18%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        19.5%, 24%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        25%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+
+    text.textBlog{
+        animation: changeBlog 60s linear infinite; 
+    }
+    @keyframes changeBlog {
+        0%, 29%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        30%, 31.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        32.5%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+
+    text.textLanding{
+        animation: changeLanding 60s linear infinite; 
+    }
+    @keyframes changeLanding {
+        0%, 40.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        41.5%, 43.5%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        44.5%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+
+    text.textPortfolio{
+        animation: changePortfolio 60s linear infinite; 
+    }
+    @keyframes changePortfolio {
+        0%, 56%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        57%, 60%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        61%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    text.textSocialNetwork{
+        animation: changeSocialNetwork 60s linear infinite; 
+    }
+    @keyframes changeSocialNetwork {
+        0%, 72%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        73%, 77%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        78%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+    
+    text.textGameSours{
+        animation: changeGameSours 60s linear infinite; 
+    }
+    @keyframes changeGameSours {
+        0%, 83.5%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+        84.5%, 90%{
+            font-size: 40px;
+            stroke: var(--color-stroke);
+            stroke-width: 3px;
+        }
+        91%, 100%{
+            font-size: 30px;
+            stroke: transparent;
+        }
+    }
+
+    image{
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: rotateCircle 2s linear infinite;
+    }
+    @keyframes rotateCircle {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+
+
     .star,
     .starYellow,
     .starBlue,
