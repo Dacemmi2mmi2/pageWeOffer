@@ -55,7 +55,7 @@
     text{
         letter-spacing: 0;
         font-family: 'Segoe Print';
-        stroke: transparent;
+        stroke: red;
         fill: white;
         font-size: 30px;
         cursor: pointer;
@@ -64,17 +64,6 @@
 
     text:hover{
         fill: orange;
-    }
-
-    text.textSiteCompany,
-    text.textBlog,
-    text.textSocialNetwork,
-    text.textLanding,
-    text.textGameSours,
-    text.textInternetShop,
-    text.textPortfolio,
-    text.textForum{
-        animation: none; 
     }
 
     path{
