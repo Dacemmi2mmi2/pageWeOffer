@@ -24,13 +24,29 @@
         height: 100%;
     }
 
+    img.home{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
     img.catWeOfffer{
         display: block;
         position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 32%;
-        z-index: 99;
+        bottom: 12px;
+        left: 5%;
+        width: 19%;
+        z-index: 100;
+    }
+
+    img.grass{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60%;
+        z-index: 100;
     }
 
     img.moon,
@@ -86,7 +102,7 @@
     .starYellow,
     .starBlue,
     .starRed{
-        z-index: -2;
+        z-index: -1000;
         width: 4px;
         height: 4px;
         position: absolute;
