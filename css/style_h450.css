@@ -1,26 +1,4 @@
 @media screen and (max-height: 450px){
-    :root {
-        --color-stroke: red;
-    }
-    @font-face{
-        font-family: 'Segoe Print';
-        src: url('../fonts/Segoe Print Bold.ttf');
-    }
-    
-    html{
-        height: 100%;
-        user-select: none;
-    }
-
-    body{
-        background: linear-gradient(#030C71 30%, #4169E1) fixed;
-        height: 100%;
-    }
-
-    main{
-        height: 100%;
-    }
-
     img.catWeOfffer{
         display: none;
     }
@@ -30,11 +8,6 @@
         display: none;
     }
     
-    svg{
-        position: fixed;
-        left: 0%;
-        box-sizing: border-box;
-    }
 
     text{
         letter-spacing: 0;
