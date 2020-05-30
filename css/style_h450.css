@@ -37,8 +37,15 @@
     /* ====================== modal windows ============================== */
     
 
+    .modal {
+        justify-content : flex-start;
+        align-items : flex-start;
+    }
+    
+
     .modal>.container {
-        width : 100%;
+        width : 80%;
+        flex-wrap : wrap;
     }
 
 
