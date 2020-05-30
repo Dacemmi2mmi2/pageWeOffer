@@ -32,6 +32,7 @@ main {
 img.home {
     position : absolute;
     bottom : 0;
+    height : auto;
     width : 100%;
     z-index : -1;
 }

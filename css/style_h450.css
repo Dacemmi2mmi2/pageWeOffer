@@ -1,5 +1,9 @@
 @media screen and (max-height: 450px){
 
+    img.home {
+        height : 120px;
+    }
+
     img.catWeOfffer {
         width : 15%;
     }
