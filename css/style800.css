@@ -1,23 +1,15 @@
 @media screen and (max-width: 800px){
 
     img.catWeOfffer {
-        display : block;
-        position : absolute;
         bottom : 10px;
         left : 4%;
         width : 30%;
-        z-index : 100;
     }
 
 
     img.moon,
     img.sun {
-        display : block;
-        position : fixed;
-        top : 0px;
-        right : 0%;
         width : 20%;
-        z-index : 50;
     }
 
 
@@ -27,12 +19,7 @@
     
 
     text {
-        font-family : 'Segoe Print';
-        stroke : red;
-        fill : white;
         font-size : 25px;
-        cursor : pointer;
-        transition : .15s linear;
     }
 
 
@@ -40,12 +27,8 @@
     .starYellow,
     .starBlue,
     .starRed {
-        z-index : 0;
         width : 2px;
         height : 2px;
-        position : absolute;
-        border-radius : 50%;
-        opacity : 0;
     }
     
     
@@ -53,38 +36,27 @@
     
     
     .modal {
-        display : flex;
         justify-content : flex-end;
         align-items : center;
-        position : fixed;
     }
     
 
     .modal>.container {
         width : 65%;
-        display : flex;
-        flex-wrap : nowrap;
     }
 
 
     button {
-        cursor : pointer;
-        background-color : rgb(244, 107, 28);
-        margin : 0 0 0 0;
         width : 45px;
         height : 45px;
         border-radius : 50%;
         font-size : 30px;
-        border : solid 1px black;
-        outline : none;
     }
 
 
     .modal p {
-        color : black;
-        width : 60%;
+        width : 65%;
         font-size : 25px;
-        font-family : 'Segoe Print';
         text-align : left;
         padding : 0px 40px 0px 40px;
         line-height : 1.3;
