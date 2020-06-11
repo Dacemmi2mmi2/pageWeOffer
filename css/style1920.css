@@ -1,18 +1,19 @@
 @media screen and (max-width: 2000px){
 
     image {
-        transform-box: fill-box;
-        transform-origin: center;
-        animation: rotateCircle 2s linear infinite;
+        transform-box : fill-box;
+        transform-origin : center;
+        animation : rotateCircle 2s linear infinite;
     }
 
 
     @keyframes rotateCircle {
-        0%{
-            transform: rotate(0deg);
+        0% {
+            transform : rotate(0deg);
         }
-        100%{
-            transform: rotate(360deg);
+        
+        100% {
+            transform : rotate(360deg);
         }
     }
        
