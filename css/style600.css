@@ -7,18 +7,18 @@
     }
 
 
-    img.grass {
+    img.grassWeOfffer {
         width : 80%;
     }
 
 
-    img.moon,
-    img.sun {
+    img.moonWeOfffer,
+    img.sunWeOfffer {
         width : 25%;
     }
 
 
-    img.sun{
+    img.sunWeOfffer {
         right : 100%;
     }
     
@@ -40,7 +40,7 @@
     /* ====================== modal windows ============================== */
     
 
-    .modal>.container {
+    .modalWeOfffer>.containerWeOfffer {
         width : 100%;
     }
 
@@ -52,7 +52,7 @@
     }
 
 
-    .modal p {
+    .modalWeOfffer p {
         width : 80%;
         font-size : 22px;
         text-align : left;

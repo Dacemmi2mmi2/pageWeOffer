@@ -7,13 +7,13 @@
     }
 
 
-    img.moon,
-    img.sun {
+    img.moonWeOfffer,
+    img.sunWeOfffer {
         width : 30%;
     }
 
 
-    img.sun {
+    img.sunWeOfffer {
         right : 100%;
     }
     
@@ -38,13 +38,13 @@
     /* ====================== modal windows ============================== */
     
     
-    .modal {
+    .modalWeOfffer {
         justify-content : flex-start;
         align-items : flex-start;
     }
     
 
-    .modal>.container {
+    .modalWeOfffer>.containerWeOfffer {
         width : 70%;
         flex-wrap : wrap;
     }
@@ -56,7 +56,7 @@
         font-size : 20px;
     }
 
-    .modal p {
+    .modalWeOfffer p {
         width : 100%;
         font-size : 18px;
         text-align : left;

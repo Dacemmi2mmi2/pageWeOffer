@@ -18,7 +18,6 @@ html {
 
 
 body {
-    background : linear-gradient(rgba(3,12,113, 1) 30%, rgba(65,105,225, 1) 100%) fixed;
     height : 100%;
 }
 
@@ -29,12 +28,22 @@ main {
 }
 
 
-img.home {
+div.slid2 {
+    background : linear-gradient(rgba(3,12,113, 1), rgba(65,105,225, 1), rgba(255,255,255, 1));
+    background-size: 100% 200%;
+    background-position-y: 0%;
+    width : 100%;
+    height : 100%;
+    transition: all 1.5s;
+}
+
+
+img.homeWeOfffer {
     position : absolute;
     bottom : 0;
     height : auto;
     width : 100%;
-    z-index : -1;
+    z-index : 0;
 }
 
 
@@ -48,7 +57,7 @@ img.catWeOfffer {
 }
 
 
-img.grass {
+img.grassWeOfffer {
     display : block;
     position : absolute;
     bottom : 0;
@@ -58,18 +67,20 @@ img.grass {
 }
 
 
-img.moon,
-img.sun {
+img.moonWeOfffer,
+img.sunWeOfffer {
     display : block;
     position : fixed;
     top : 0px;
     right : 0%;
     width : 12%;
     z-index : 50;
+    opacity: 1;
+    transition : right 1.5s;
 }
 
 
-img.sun {
+img.sunWeOfffer {
     right: 100%;
 }
     
@@ -77,6 +88,8 @@ img.sun {
 svg {
     position : fixed;
     left : 0%;
+    opacity: 1;
+    transition: left 1.5s;
 }
 
 
@@ -86,7 +99,7 @@ text {
     transition : .15s linear;
     stroke : var(--colorText-stroke);
     fill : var(--colorText-fill);
-    font-size: 30px;
+    font-size : 30px;
     transition: .15s linear;
 }
     
@@ -106,7 +119,7 @@ path {
 .starYellow,
 .starBlue,
 .starRed {
-    z-index : -1000;
+    z-index : 10;
     width : 4px;
     height : 4px;
     position : absolute;
@@ -148,11 +161,13 @@ path {
 /* ========================= modal windows =========================== */
     
     
-.modal {
+.modalWeOfffer {
     display : flex;
     justify-content : center;
     align-items : center;
     position : fixed;
+    opacity : 1;
+    transition : left 1.5s;
 }
     
 
@@ -171,7 +186,7 @@ path {
 }
 
 
-.modal>.container {
+.modalWeOfffer>.containerWeOfffer {
     width : 60%;
     display : flex;
     flex-wrap : nowrap;
@@ -191,7 +206,7 @@ button {
 }
 
 
-.modal p {
+.modalWeOfffer p {
     color : black;
     width : 90%;
     font-size : 30px;
