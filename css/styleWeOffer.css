@@ -38,6 +38,15 @@ div.slid2 {
 }
 
 
+h2 {
+    font-family : 'Segoe Print';
+    font-size : 2em;
+    text-align : center;
+    padding-top : 20px;
+    color : white;
+}
+
+
 img.homeWeOfffer {
     position : absolute;
     bottom : 0;

@@ -36,10 +36,14 @@ const variables = {
 
 // position for <text> in svg and animation circle ==========================
 const fnwh = function heigthWidth(data){
-    for(let i = 0; i <= variables.paramsScreen.length; i++){
-        if(window.innerWidth < variables.paramsScreen[i]){
-            htmlElements.svgContainer.innerHTML = data[variables.paramsScreen[i]];
-            break;
+    if(window.innerHeight < 450){
+        htmlElements.svgContainer.innerHTML = data.h450;
+    }else{
+        for(let i = 0; i <= variables.paramsScreen.length; i++){
+            if(window.innerWidth < variables.paramsScreen[i]){
+                htmlElements.svgContainer.innerHTML = data[variables.paramsScreen[i]];
+                break;
+            }
         }
     }
 };
@@ -131,7 +135,7 @@ const closeModal = function closeModalWindow(classModal){
 }
 
 
-// bgc nigth or day
+// bgc night or day
 const bgcColorModWin = function backgroundColorModalWindows(paramsBgcol){
     paramsBgcol === 'day' ? htmlElements.main.style.backgroundPositionY = 100 + '%' : htmlElements.main.style.backgroundPositionY = 0 + '%';
 }
